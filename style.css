@@ -58,6 +58,7 @@ footer{margin-top: 2em; text-align: center; font-size: 1em;}
     .menu{flex-direction: column; margin:1em; gap:2em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .cardi-list{flex-direction: column; margin:1em; gap:2em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .contact{align-items: center; display: flex; flex-direction: column;}
+    .about img{content: normal; width: 100%; height: 500px;}
 }
 
 
