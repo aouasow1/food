@@ -11,7 +11,7 @@ a button{background-color: rgb(247, 174, 17); padding: 0.5em; border-radius: 10p
 h2{font-size: 2.5em; margin-top: 0.5em; align-items: center; text-align: center; }
 .about p{font-size: 1.5em;  padding: 0.5em; border-radius: 10px; float: right;}
 .about{ padding: 0.5em; border-radius: 10px; align-items: center; margin-top: 3em; display: flex; gap: 2em;
-background-color:  rgb(247, 174, 17) ; }
+background-color:  rgb(247, 174, 17) ; margin-bottom: 2em; }
 .about img{border-radius: 50%;}
 
 h3{font-size: 2.5em; margin-top: 3em;}
@@ -29,10 +29,10 @@ align-items: center;  margin-top: 3em;}
 .cardi a button{font-size: 1em; background-color: white; align-items: center;
     padding: 0.25em; margin: auto; border-radius: 10px; margin-left: 7em;}
 
-.h2{font-size: 2.5em; margin-top: 2em; align-items: center; text-align: center; }
-.menu h5{color: rgb(247, 174, 17) ; text-align: center;}
-.menu p{ display: flex;}
-.table h5 p{font-size: 1.5em;}
+h2 .h2{font-size: 2.5em; margin-top: 4em; align-items: center; text-align: center; }
+.menu h5{color: rgb(247, 174, 17) ; text-align: center; }
+.menu p{ display: flex; font-weight: 600;}
+.table h5 p{font-size: 1.5em; }
 .menu img {height: 500px; border-radius: 50%; transition: 0.3s ease-in-out;
     box-shadow: 0 0 25px  rgb(247, 174, 17);}
 .menu img:hover {box-shadow: 0 0 25px  rgb(247, 174, 17),
@@ -44,6 +44,8 @@ align-items: center;  margin-top: 3em;}
 
 .contact{background-color: rgb(247, 174, 17); border: 20px; padding: 2em;}
 .message{background-color: blue; padding: 0.5em; border-radius: 10px;}
+
+.fs-form{background-color: rgb(247, 174, 17);}
 
 
 footer{margin-top: 2em; text-align: center; font-size: 1em;}
