@@ -45,15 +45,6 @@
         required
       />
     </div>
-    <div class="fs-field">
-      <label class="fs-label" for="company-name">Company Name</label>
-      <input
-        class="fs-input"
-        id="company-name"
-        name="company-name"
-        placeholder="Enter your company name (optional)"
-      />
-    </div>
   </fieldset>
   <fieldset>
     <legend class="fs-fieldset-title">Shipping Address</legend>
@@ -87,10 +78,7 @@
         name="state-province-region"
         required
       >
-        <option value="california">California</option>
-        <option value="texas">Texas</option>
-        <option value="new-york">New York</option>
-        <option value="other">Other</option>
+        <option value="california">Indiana</option>
       </select>
     </div>
     <div class="fs-field">
@@ -134,6 +122,25 @@
         required
       />
     </div>
+
+  <div class="fs-field">
+      <label class="fs-label" for="product-name">Drinks</label>
+      <select class="fs-select" id="product-name" name="product-name" required>
+        <option value="product-a">Jus de Bissap(Hisbicus Juice). | $5</option>
+        <option value="product-b"> Jus de Ginginbre(Ginger Juice). | $5</option>
+      </select>
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="quantity">Quantity</label>
+      <input
+        class="fs-input"
+        id="quantity"
+        name="quantity"
+        placeholder="Enter the quantity"
+        required
+      />
+    </div>
+
     <div class="fs-field col-span-full">
       <label class="fs-label" for="additional-notes">
         Additional Notes/Instructions
