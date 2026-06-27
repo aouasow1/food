@@ -5,112 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>HomeMadeFoods</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <a href="#" class="navbar-brand"><img src="logo1.PNG" alt="" width="150px" height="150px"></a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#toggleMobileMenu"
-            aria-controls="toggleMobileMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-
-            >
-            <span class="navbar-toggler-icon"></span>
-
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center ">
-                    <li>
-                        <a class="nav-link d-inline fs-4 m-1" href="#home">Home</a>
-                        <a class="nav-link d-inline fs-4 m-1" href="#about">About</a>
-                        <a class="nav-link d-inline fs-4 m-1" href="#menu">Menu</a>
-                        <a class="nav-link d-inline fs-4 m-1" href="#order">Order</a>
-                        <a class="nav-link d-inline fs-4 m-1" href="#contact">contact</a>
-                    </li>
-                </ul>
+         <header class="header">
+            <a class="logo">HOMEMADEFOOD</a>
+            <nav>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#contact">contact</a>
             </div>
         </nav>
-    </div>
+         </header>
 
-    <section class="container">
-        <div class="intros container-fluid">
+    <section>
+        <div class="wrapper">
             <div class="intro">
-                <h1>FRESH HOMEMADE DELIVERED TO YOUR DOOR</h1>
-                <p>Enjoy real food made with love,  just like home.</p><br>
+                <h1>FRESH <br> HOMEMADE <br> DELIVERED TO YOUR <br> DOOR</h1> <br>
+                <p>Enjoy real food made with love,  just like home.</p> <br> <br>
+                <a href="#menu"><button class="now1234">Food Menu</button></a>
+                <a href="#order"><button class="now123">Order Now</button></a>
             </div>
             <div class="tieb">
-                <img src="attieke2.PNG" alt="tieb">
+                <img src="tiebou.png" alt="tieb">
             </div>
         </div>
-        <a href="#order"><button>Order Now</button></a> <br>
+        
+        <br>
     </section>
 
-    <section>
+    <section class="about" id="about">
         <h2>About Us</h2>
-        <div class="about container-fluid" id="about">
-            <img src="lafidi.JPG" alt="" width="500px" height="500px">
-            <p>At Fresh HomeMadeFoods, we believe in the power of real food. Our recipes come from family traditions,
-                passed down through generations,
-                and every dish is made from scratch using fresh,
-                locally sourced ingredients. Whether you're too busy to cook or craving a taste of home,
+        
+            <p>At Fresh HomeMadeFoods, we believe in the power of real food. <br>
+                Our recipes come from family traditions,passed down through generations,<br>
+                and every dish is made from scratch using fresh,locally sourced ingredients. <br>
+                Whether you're too busy to cook or craving a taste of home, <br>
                 we're here to serve meals that nourish the body and comfort the soul.</p>
-        </div>
+        
     </section>
-
+<br> <br>
     <section>
-        <h2 class="h2">Menu</h2>
-        <div class="menu container-sm" id="menu">
-            <div><img src="peanut.png"  alt="..." height=400px width=500px></div>
+        <h2 class="h2">Our menu</h2>
+        <div class="menu" id="menu">
+            <div><img src="chicken.jpg"  alt="..." height=400px width=500px></div>
+            <div class="rectangle"></div>
             <div>
                     <h5>What We Offer?</h5>
-                    <p>Rice with Meat Peanut Butter Sauce  || $15 <br>
-                    Attieke with Fish or Chicken  || $15 <br>
-                    Tiep with meat(Fish-Beef-Goat-Chicken)  || $15 <br>
-                    Beef Sweet Potato Leaf Sauce with Rice  || $15 <br>
-                    Beef Okra Sauce with Rice ||  $15 <br>
-                    Beef Onion Sauce with Rice || $15 <br>
-                    Yassa Poulet(chicken) with Rice || $15 <br>
-                    Poulet Mayo || $15 <br></p>
-
-                    <h5>Drinks</h5>
-                    <p>Jus De Bissap (Hisbicus Juice)  || $3 <br>
-                        Jus De Ginginbre(Ginger Juice)  || $3</p>
+                    <p class="food">FOOD</p>
+                    <p>.Rice meat with salad</p>
+                    <p>.Pasta</p>
+                    <p>.Fish with salad</p>
+                    <p>.Tieb(Zamai) Chicken</p><br>
+                    <p class="drink">DRINK</p>
+                    <p>.Ginger juice</p>
+                    <p>Hibiscus(Bissap) juice</p><br>
             </div>
             
         </div>
-    </section>
+    </section> <br>
 
-    <section class="container">
-        <h2 class="h2">Order</h2>
-        <div class="order container-fluid" id="order">
+
+<section class="line"></section>
+    <section>
+        <h3 class="h3">Order</h3>
+        <div class="order" id="order">
             <div class="cardi">
                 <div class="cardi-list">
                     <div class="cardi-link">
-                        <img src="attieke.JPG" alt="attieke">
-                        <p>Attieke</p>
+                        <img src="salad.jpg" alt="attieke">
+                        <p>Rice meat with salad </p>
                         <a href="order.html"><button>Order Now</button></a>
                     </div>
 
                     <div class="cardi-link">
-                        <img src="tieb1.JPG" alt="tieb1">
-                        <p>Tieb</p>
+                        <img src="pasta.jpg" alt="tieb1">
+                        <p>Pasta</p>
                         <a href="order.html"><button>Order Now</button></a>
                     </div>
                     <div class="cardi-link">
-                        <img src="nadji.JPG" alt="nadji">
-                        <p>Onion With Rice</p>
+                        <img src="fish.jpg" alt="nadji">
+                        <p>Fish with salad</p>
                         <a href="order.html"><button>Order Now</button></a>
                     </div>
                     <div class="cardi-link">
-                        <img src="meat.JPG" alt="meat">
-                        <p>Brochette Vegetable Salad</p>
+                        <img src="rice.png" alt="meat">
+                        <p>Tieb(Zamai) Chicken</p>
+                        
+                        <a href="order.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="cardi-link">
+                        <img src="ginger juice.PNG" alt="meat">
+                        <p>Ginger juice</p>
+                        <a href="order.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="cardi-link">
+                        <img src="bissap juice.PNG" alt="meat">
+                        <p>Hibiscus(Bissap) juice</p>
                         <a href="order.html"><button>Order Now</button></a>
                     </div>
                 </div>
@@ -118,7 +112,7 @@
         </div>
     </section><br><br>
 
-    <section class="container " class="contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="h2">Contact</h2>
         <form
   action="https://formspree.io/f/xvgerrak"
