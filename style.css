@@ -1,24 +1,32 @@
 
-*{ box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; outline: none;
-font-family: Georgia, 'Times New Roman', Times, serif;}
-body{ background-color: #806E0A;}
-html{font-size: 60%;
-overflow-x: scroll;}
+*{ box-sizing: border-box; margin: 0; padding: 0; text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, serif; list-style: none;}
+body{  background-color: #806E0A; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+html{ font-size: 60%;}
+header{height: 5vh; width: 100vw; background-color: #806E0A; background-size: cover; }
+.navbar{position: fixed; padding: 30px; display: flex; justify-content: space-between;
+width: 100%; align-items: center; background-color: rgba(255, 255, 255, 0.199); }
+.navbar .nav-links{display: flex; align-items: flex-end; margin-left: 600px; position: relative }
+
+.navbar .logo{color:rgb(247, 174, 17); font-size: 2em; font-weight: bold; position: absolute;
+top: 30px; left: 50px;}
+.navbar a{color: black;}
+.navbar .nav-links ul{  display: flex;}
+.navbar .nav-links ul li{margin: 0 20px;}
+.navbar .nav-links ul li.active a{color: #806E0A; font-weight: 600;}
+.navbar .nav-links ul li a{font-size: 2em;}
+.menu-hamburger{position: absolute; top: 50px; right: 50px; display: none; cursor: pointer;}
 
 
-.header{position: fixed; justify-content: space-between; padding: 1em; position: fixed; z-index: 100;
-padding: 4rem 12%; top: 0; left: 0; width: 100%; align-items: center; display: flex; background: #201c04; backdrop-filter: blur(10px); }
-.navbar a{color: white; font-size: 2em;  margin-left: 4rem; cursor: pointer;}
-.logo{color:  rgb(247, 174, 17); cursor: pointer; font-size: 3em; cursor: pointer;
-  font-weight:bold; font-style: oblique;  text-align: left;}
 
 
-.wrapper{display: flex; align-items: center; text-align: center; padding: auto; margin-top: 12em; }
-.tieb img{width: 500px; height: 500px;  align-items: center; text-align: center; }
+
+.wrapper{display: flex; align-items: center; text-align: center; padding: auto; margin-top: 2em; }
+.tieb img{width: 500px; height: 500px;  align-items: center; text-align: center; margin-top: 4em; }
 .intro h1{font-size: 6em;  padding: auto; text-align: left; margin-left: 2em; }
-.intro p{font-size: 2em; margin-left: 3.5em; font-style: italic;}
-.now123{background-color:  rgb(247, 174, 17); cursor: pointer; color: black; padding: 0.5em; border-radius: 10px; margin-left: 4em; font-size: 1.5em;}
-.now1234{background-color:  rgb(247, 174, 17); cursor: pointer; color: white; padding: 0.5em; border-radius: 10px; margin-left: 3em; font-size: 1.5em;}
+.intro p{font-size: 2em;  font-style: italic;}
+.now123{background-color:  rgb(247, 174, 17);  cursor: pointer; color: black; padding: 0.5em; border-radius: 10px; margin-left: 4em; font-size: 2em;}
+.now1234{background-color:  rgb(247, 174, 17); cursor: pointer; color: white; padding: 0.5em; border-radius: 10px; margin-left: 3em; font-size: 2em;}
 
 
 h2{font-size: 3em; align-items: left; margin-left: 5.5em; margin-top: 2em;}
@@ -73,29 +81,36 @@ a button .price{padding: 2em;}
 
 footer{margin-top: 2em; text-align: center; font-size: 1em;}
 
-@media (max-width:1024px) {
-    .header{ padding:.25em}
-    .logo{display:block; text-align: left; font-size: 2em; margin: .25em;}
-    .nav{position: absolute;}
-    .navbar a{  font-size: 1.5em; padding: .25em; display: block; text-decoration: underline; 
-        
-        }
-    .wrapper{flex-direction: column; display: flex; align-items: center; text-align: center; padding: auto;}
-    .tieb img{content: normal; height: 350px; width: 3500px;  border-radius: 50%; width: 400px; transition: 0.3s ease-in-out;
+@media (max-width:1000px) {
+    .navbar{padding: 0; height: 10vh;}
+    .navbar .logo{position: absolute; top: 10px; left: 30px;}
+    .nav-links{position: absolute; width: 100%; height: 100vh; background-color: rgba(255, 0, 0, 0.158);
+    backdrop-filter: blur(7px); top: 0; left: 0; display: flex; justify-content: center; align-items: center;
+    margin-left: -100%; transition: all 0.5s ease;}
+    .nav-links.mobile-menu{margin-left: 0;}
+    .navbar .menu-hamburger{display: block; top: 20px;}
+    .navbar .nav-links ul li{margin: 25px 0; font-size: 1.2em;}
+    .nav-links ul{display: flex; flex-direction: column; align-items: center;}
+    .wrapper{display: flex; align-items: center;text-align: center; padding: auto;}
+    .tieb img{content: normal; height: 270px; width: 240px;  border-radius: 50%; transition: 0.3s ease-in-out;
     box-shadow: 0 0 25px  rgb(247, 174, 17); margin-right: 3em;}
     .tieb img:hover {box-shadow: 0 0 25px  rgb(247, 174, 17),
                             0 0 50px  rgb(247, 174, 17),
                             0 0 100px  rgb(247, 174, 17)
 }
-    .intros{flex-direction: column; margin:1em; gap:0.25em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
-    .intro h1{font-size:4em; margin-top: 1em; margin-left: .5em;}
-    .intro p{margin-left: .5em; text-align: left;}
-    a button{margin-bottom: 2em; align-items: center; text-align: center;}
+    .intros{ justify-content: space-between; margin:1em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;
+    align-items: center;}
+    .intro h1{font-size:3.5em; margin-top: 2em; margin-left: .5em; }
+    .intro p{margin-left: 1.5em; text-align: left; font-size: 1.3em;}
+    .intro a button{ margin: .25em; align-items: center; padding: .5em; text-align: center; justify-content: space-between;
+    display: flex; font-size: 1.5em; display: inline;}
     .about{flex-direction: column; margin:1em; gap:0.25em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
-    .menu{flex-direction: column; margin:1em; gap:2em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
+    .menu{flex-direction: column; margin: 1em; grid: 1fr; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .cardi-list{ flex-direction: column;  margin:1em; gap:2em; grid: 2fr 2fr; grid-template-columns: 2fr 2fr; grid-template-rows: 1fr;
     overflow-x: auto;}
     .contact{align-items: center; display: flex; flex-direction: column;}
+    .about p{text-align: left; margin-left: .5em;}
+    .about::after{transform: skewY(-20deg);}
     .about img{content: normal; width: 100%; height: 500px;}
     .rectangle{background-color: white; height: .70px; width: 100%; margin-top: 1.5em;}
 
@@ -105,6 +120,9 @@ footer{margin-top: 2em; text-align: center; font-size: 1em;}
                             0 0 50px  rgb(247, 174, 17),
                             0 0 100px  rgb(247, 174, 17)
 }
+.contact .h2{align-items: center; text-align: center}
+.h2{margin-top: 1em}
+h3{text-align: center; align-items: center ; margin-right: 3.5em; font-size: 2em}
 }
 
 
@@ -164,20 +182,9 @@ textarea {
   padding: 0;
 }
 
-[type="checkbox"],
-[type="radio"],
-[type="range"] {
-  appearance: none;
-  flex-shrink: 0;
-  padding: 0;
-  user-select: none;
-}
 
-[type="checkbox"]:focus,
-[type="radio"]:focus,
-[type="range"]:focus {
-  outline: none;
-}
+
+
 
 /** Components **/
 
