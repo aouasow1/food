@@ -49,14 +49,16 @@ h2{font-size: 3em; align-items: left; margin-left: 5.5em; margin-top: 2em;}
 .cardi-list{grid-template-columns: 4fr 4fr; grid-template-rows: 1fr; grid: 4fr 4fr; display: inline-flex; gap: 1em; padding: 0;
 align-items: center;  margin-top: 3em; text-align: center;}
 
-.cardi-link{background-color: rgb(247, 174, 17) ; padding: 0.5em; border-radius: 10px;align-items: center;}
+.cardi-link{background-color: rgb(247, 174, 17) ; padding: 1.5em; border-radius: 10px;align-items: center;}
 
 .cardi{display: flex; align-items: center; flex-direction: column;}
 
 a button .price{padding: 2em;}
-.cardi p {text-align: center; margin-top: 1em; font-size: 1.5em;}
+.cardi p {text-align: center; margin-top: 1em; font-size: 1.5em; margin-bottom: 1em;}
+span{color: #d1d1d1; background-color: black; padding: .1em; border-radius: 5px;}
 .cardi a button{font-size: 1.5em; background-color: white; align-items: center; margin-top: .5em;
     padding: .5em; margin: auto; border-radius: 10px; color: black; cursor: pointer;}
+.light-color{background-color: #e2d2746c; padding: 1em; width: 100%; border-radius: 10px;}
 
 .menu h5{color: white ; text-align: center; font-size: 3em; }
 .food{text-decoration-line: underline; color:  rgb(247, 174, 17); font-size: 2em; margin-top: 2em;}
